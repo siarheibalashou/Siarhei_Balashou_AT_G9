@@ -3,6 +3,7 @@ package project.bubbletask.boxing;
 public class Bubble {
     private final double BUBBLEVOLUME = 0.3;
     private String bubbleStructure;
+    int bubbleVolume;
 
     public Bubble(String structure) {
         this.bubbleStructure = structure;
