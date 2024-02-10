@@ -1,4 +1,4 @@
-package BubbleTask;
+package bubbletask;
 
 public abstract class Water {
     private String color;

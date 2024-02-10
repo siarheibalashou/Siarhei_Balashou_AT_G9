@@ -1,4 +1,4 @@
-package CycleTask;
+package cycletask;
 
 public class PrintArrayElements {
     int[] array = {1, 5, 8, 7, 9};

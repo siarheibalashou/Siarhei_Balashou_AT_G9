@@ -1,4 +1,4 @@
-package CycleTask;
+package cycletask;
 
 public class MinimumArrayElement {
     int[] array = {5, 12, 10, 1, 0};

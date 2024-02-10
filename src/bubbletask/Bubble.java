@@ -1,7 +1,7 @@
-package BubbleTask;
+package bubbletask;
 
 public class Bubble {
-    private final double bubbleVolume = 0.3;
+    private final double BUBBLEVOLUME = 0.3;
     private String bubbleStructure;
 
     public Bubble(String structure) {
