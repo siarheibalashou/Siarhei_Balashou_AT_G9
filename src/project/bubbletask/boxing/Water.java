@@ -6,12 +6,12 @@ public abstract class Water {
     private int temperature = 0;
     private String smell = "no";
 
+
     public Water(String color, String transparency, int temperature, String smell) {
         this.color = color;
         this.transparency = transparency;
         this.temperature = temperature;
         this.smell = smell;
-
     }
 
     public String getColor() {

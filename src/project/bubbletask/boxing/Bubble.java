@@ -21,7 +21,7 @@ public class Bubble {
     }
 
     public void cramp() {
-        System.out.print("Cramp!");
+        System.out.println("Cramp!");
     }
 
 }
