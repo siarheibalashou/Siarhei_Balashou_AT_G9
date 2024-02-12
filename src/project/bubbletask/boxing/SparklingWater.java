@@ -1,19 +1,19 @@
 package project.bubbletask.boxing;
 
-public class SparklingWater {
-    public class Bottle {
-        private double volume;
-        Water water = new Water() {
-            SparklingWater sparklingWater = new SparklingWater();
-        };
+public class SparklingWater extends Water {
+    private boolean isOpened;
+    Bubble[] bubbles;
 
-        public Bottle() {
-            this.volume = volume;
-        }
-
-        private int bubbleAmt = (int) (volume * 10000);
-
-
+    public SparklingWater(String color, String transparency, int temperature, String smell) {
+        super(color, transparency, temperature, smell);
+        isOpened();
     }
 
+    public boolean isOpened() {
+        return isOpened;
+
+    }
+    public void pump(Bubble[] bubbles){
+
+    }
 }
