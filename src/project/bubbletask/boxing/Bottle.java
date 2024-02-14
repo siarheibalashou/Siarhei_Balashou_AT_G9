@@ -27,7 +27,6 @@ public class Bottle {
     }
 
     public void open() {
-        Bubble[] newArray = waterSparkling.getBubbles();
         waterSparkling.pump(new Bubble[(int) (volume * 10000)]);
         waterSparkling.degas();
     }
