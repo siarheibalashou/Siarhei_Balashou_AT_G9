@@ -8,7 +8,6 @@ public class SparklingWater extends Water {
 
     public SparklingWater(String color, String transparency, int temperature, String smell) {
         super(color, transparency, temperature, smell);
-        this.bubbles = bubbles;
         isOpened();
     }
 
@@ -21,11 +20,11 @@ public class SparklingWater extends Water {
         return bubbles;
     }
 
-    public Bubble[] pump(Bubble[] bubbles) {
+    public void pump(Bubble[] bubbles) {
+        this.bubbles = bubbles;
         for (int i = 0; i < bubbles.length; i++) {
-            bubbles[i] = bubble;
+            bubbles[i] = new Bubble("c3");
         }
-        return bubbles;
     }
 
     public void setOpened() {
@@ -44,11 +43,13 @@ public class SparklingWater extends Water {
     }
 
     private void degas1() throws InterruptedException {
-        for (int i = 0; i< bubbles.length; i++ ) {
-            if (i ==(10+5*getTemperature())) {
+        for (int i = 0; i < bubbles.length; i++) {
+            if (i == (10 + 5 * getTemperature())) {
                 Thread.sleep(1000);
             }
         }
     }
-    private void isOpened1(){};
+
+    private void isOpened1() {
+    }
 }
