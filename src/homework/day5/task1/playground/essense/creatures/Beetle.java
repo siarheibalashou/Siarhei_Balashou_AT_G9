@@ -1,6 +1,6 @@
 package homework.day5.task1.playground.essense.creatures;
 
-public class Beetle extends Insect {
+public class Beetle extends Insect implements Crawlable {
 
     public void nest(Carrot home) {
         String N = getName();
