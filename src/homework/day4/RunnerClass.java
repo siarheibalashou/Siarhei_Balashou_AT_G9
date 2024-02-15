@@ -1,4 +1,4 @@
-package homework.day2;
+package homework.day4;
 
 public class RunnerClass {
     public static void main(String[] args) {
