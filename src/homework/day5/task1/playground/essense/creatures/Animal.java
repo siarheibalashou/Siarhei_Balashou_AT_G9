@@ -2,13 +2,11 @@ package homework.day5.task1.playground.essense.creatures;
 
 import homework.day5.task1.playground.essense.Matter;
 
-import java.text.Format;
-
 public abstract class Animal extends Matter {
     protected String name;
 
     public Animal(int mass, String name) {
-        super(mass);
+        super(mass, name);
         this.name = name;
     }
 
