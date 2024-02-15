@@ -3,13 +3,9 @@ package homework.day5.task1.playground.essense.creatures;
 public class Pigeon extends Vertebrata {
     protected int mass;
 
-    public Pigeon(int mass) {
+    public Pigeon(int mass, String name) {
+        super(mass, name);
         this.mass = mass;
-    }
-
-    @Override
-    public int getMass() {
-        return mass;
     }
 
     @Override

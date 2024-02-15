@@ -3,7 +3,8 @@ package homework.day5.task1.playground.essense.creatures;
 public class Crocodile extends Vertebrata  implements Crawlable{
     protected int mass;
 
-    public Crocodile(int mass) {
+    public Crocodile(int mass, String name) {
+        super(mass, name);
         this.mass = mass;
     }
 

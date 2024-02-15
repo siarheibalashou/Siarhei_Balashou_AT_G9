@@ -3,17 +3,8 @@ package homework.day5.task1.playground.essense.creatures;
 public class Raven extends Vertebrata{
     protected int mass;
 
-    public Raven(int mass) {
-        this.mass = mass;
-    }
-
-    @Override
-    public int getMass() {
-        return mass;
-    }
-
-    @Override
-    public void setMass(int mass) {
+    public Raven(int mass, String name) {
+        super(mass, name);
         this.mass = mass;
     }
 

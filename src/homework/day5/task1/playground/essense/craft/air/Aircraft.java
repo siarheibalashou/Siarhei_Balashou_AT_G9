@@ -8,7 +8,7 @@ public abstract class Aircraft extends Matter implements Flyable, Transportable 
     protected String name;
 
     public Aircraft(int mass, String name) {
-        super(mass);
+        super(mass, name);
         this.name = name;
     }
 

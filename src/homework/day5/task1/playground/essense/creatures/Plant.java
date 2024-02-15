@@ -4,10 +4,9 @@ import homework.day5.task1.playground.essense.Matter;
 
 public abstract class Plant extends Matter {
     protected String name;
-
     public Plant(int mass, String name) {
-        super(mass);
-        this.name = name;
+        super(mass, name);
+        this.mass = mass;
     }
 
     public String getName() {
