@@ -1,8 +1,10 @@
 package homework.day5.task1.playground.essense.craft.field;
 
 import homework.day5.task1.playground.essense.Matter;
+import homework.day5.task1.playground.essense.craft.Rideable;
+import homework.day5.task1.playground.essense.craft.Transportable;
 
-public abstract class Vehicle extends Matter {
+public abstract class Vehicle extends Matter implements Transportable, Rideable {
     protected String name;
 
     public Vehicle(int mass, String name) {
