@@ -27,24 +27,23 @@ public class FlyableProcessorRunner {
         Plane aPlane = new Plane(3452, "Boeing 837 Plane");
         Rocket aRocket = new Rocket(7623, "Super Heavy Rocket");
         Fly aFly = new Fly(23, "Domestica Fly");
-    Mosquito aMosquito = new Mosquito(12, "Vulgaris Mosquito");
-////    flyableProcessor.runFlyable(flyableCopter);
-////    flyableProcessor.runFlyable(flyablePlane);
-//    flyableProcessor.runFlyable(flyableRocket);
-//    flyableProcessor.runFlyable(flyableFly);
-    flyableProcessor.runFlyable(flyableMosquito);
-////    flyableProcessor.runFlyable(aircraftCopter);
-////    flyableProcessor.runFlyable(aircraftPlane);
-////    flyableProcessor.runFlyable(aircraftRocket);
-     /*   flyableProcessor.runFlyable(insectFly); не использует методы интерфейса Flyable
+        Mosquito aMosquito = new Mosquito(12, "Vulgaris Mosquito");
+        flyableProcessor.runFlyable(flyableCopter);
+        flyableProcessor.runFlyable(flyablePlane);
+        flyableProcessor.runFlyable(flyableRocket);
+        flyableProcessor.runFlyable(flyableFly);
+        flyableProcessor.runFlyable(flyableMosquito);
+        flyableProcessor.runFlyable(aircraftCopter);
+        flyableProcessor.runFlyable(aircraftPlane);
+        flyableProcessor.runFlyable(aircraftRocket);
+     /*   flyableProcessor.runFlyable(insectFly); Insect не использует методы интерфейса Flyable
         flyableProcessor.runFlyable(insectMosquito);*/
-
-//   flyableProcessor.runFlyable(aCopter);
-//   flyableProcessor.runFlyable(aPlane);
-//   flyableProcessor.runFlyable(aRocket);
-//   flyableProcessor.runFlyable(aFly);
+        flyableProcessor.runFlyable(aCopter);
+        flyableProcessor.runFlyable(aPlane);
+        flyableProcessor.runFlyable(aRocket);
+        flyableProcessor.runFlyable(aFly);
         flyableProcessor.runFlyable(aMosquito);
-//   flyableProcessor.runFlyable(aCopter, "никуда");
-//   flyableProcessor.runFlyable(flyableFly, "повсюду");
+        flyableProcessor.runFlyable(aCopter, "никуда");
+        flyableProcessor.runFlyable(flyableFly, "повсюду");
     }
 }

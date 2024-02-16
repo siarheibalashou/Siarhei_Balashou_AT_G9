@@ -9,7 +9,8 @@ public class Mosquito extends Insect implements Flyable {
         this.name=name;
     }
 
-    public String getName() {
-        return this.name;
+    public void fly(String direction) {
+        String flyMessage = "I am " + this.getClass().getSimpleName() + ", my name is " + this.name + " and I am flying to " + direction;
+        System.out.println(flyMessage);
     }
 }

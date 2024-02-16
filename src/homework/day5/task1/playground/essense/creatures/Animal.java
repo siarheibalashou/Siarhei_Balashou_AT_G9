@@ -6,7 +6,7 @@ public abstract class Animal extends Matter {
     protected String name;
 
     public Animal(int mass, String name) {
-        super(mass, name);
+        super(mass);
         this.name = name;
     }
 

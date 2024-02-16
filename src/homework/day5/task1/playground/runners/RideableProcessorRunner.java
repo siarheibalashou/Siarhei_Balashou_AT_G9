@@ -19,11 +19,8 @@ public class RideableProcessorRunner {
         Car aCar = new Car(223, "Lada Car");
         Moped aMoped = new Moped(3452, "Honda EM1 837 Moped");
         Motorbike aMotorbike = new Motorbike(7623, "Suzuki GSX-R1000 Motorbike");
-        Vehicle anonymousVehicle = new Vehicle(3452, "Honda EM1 837 Vehicle") {
-        };
-        Rideable anonymousRideable = new Rideable() {
+        Rideable anonymousRideable = new Rideable(){
             String name = "Anonymous";
-
             @Override
             public void drive(String direction) {
                 System.out.printf("I am %s, my name is %s and I amd drive to %s%n",
@@ -40,7 +37,7 @@ public class RideableProcessorRunner {
         rideableProcessor.runRideable(aCar);
         rideableProcessor.runRideable(aMoped);
         rideableProcessor.runRideable(aMotorbike);
-        rideableProcessor.runRideable(anonymousVehicle);
+        rideableProcessor.runRideable(anonymousRideable);
         rideableProcessor.runRideable(vehicleMoped);
     }
 }

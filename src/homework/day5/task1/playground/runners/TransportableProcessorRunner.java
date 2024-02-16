@@ -53,8 +53,7 @@ public class TransportableProcessorRunner {
         transportableProcessor.runTransportable(vehicleCar);
         transportableProcessor.runTransportable(vehicleMoped);
         transportableProcessor.runTransportable(vehicleMotorbike);
-       /* transportableProcessor.runTransportable(flyableCopter); не принимает объект потому что не материнский класс не имплементит исп.
-       интерфейс Transportable
+       /* transportableProcessor.runTransportable(flyableCopter); объект интерфейса Flyable,Rideable не имеет метода runTransportable
         transportableProcessor.runTransportable(flyablePlane);
         transportableProcessor.runTransportable(flyableRocket);
         transportableProcessor.runTransportable(rideableCar);

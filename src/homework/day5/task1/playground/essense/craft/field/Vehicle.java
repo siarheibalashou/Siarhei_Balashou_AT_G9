@@ -8,7 +8,7 @@ public abstract class Vehicle extends Matter implements Transportable, Rideable 
     protected String name;
 
     public Vehicle(int mass, String name) {
-        super(mass, name);
+        super(mass);
         this.name = name;
     }
 
@@ -18,5 +18,15 @@ public abstract class Vehicle extends Matter implements Transportable, Rideable 
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public int getMass() {
+        return super.getMass();
+    }
+
+    @Override
+    public void setMass(int mass) {
+        super.setMass(mass);
     }
 }
