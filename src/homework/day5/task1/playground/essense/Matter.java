@@ -3,7 +3,7 @@ package homework.day5.task1.playground.essense;
 public abstract class Matter {
    protected int mass;
 
-    public Matter(int mass, String name) {
+    public Matter(int mass) {
         this.mass = mass;
     }
 
