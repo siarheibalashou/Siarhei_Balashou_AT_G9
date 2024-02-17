@@ -8,7 +8,7 @@ import java.util.Date;
 public class CurrentDateIntoConsole {
     public void displayCurrentDateTime() {
         Date now = new Date();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("DD MMMM, YYYY, ");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("DD MMMM, YYYY, HH mm");
         String currentDateTime = simpleDateFormat.format(now);
         System.out.println("Сейчас на дворе: " + currentDateTime);
     }
