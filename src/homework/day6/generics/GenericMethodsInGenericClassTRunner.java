@@ -47,7 +47,7 @@ public class GenericMethodsInGenericClassTRunner {
         genericMethodsInGenericClassT.genericMethodHalfGenArgs(genericMethodsInGenericClassTMotorbike, "1231");
         genericMethodsInGenericClassT.genericMethodOneGenArg(genericMethodsInGenericClassTVehicle);
         System.out.println(genericMethodsInGenericClassT.genericMethodTwoGenArgs(genericMethodsInGenericClassTMotorbike,"123123"));
-        System.out.println(genericMethodsInGenericClassTCar.genericMethodTwoGenArgs(new Car(123,"123"),new Diesel()));
+        System.out.println(genericMethodsInGenericClassTCar.genericMethodTwoGenArgs(new Car(123,"123"),new Plane(15555,"Strttttt")));
         genericMethodsInGenericClassTCar.genericMethodOneGenArg(new Car(55,"new car"));
 
     }
