@@ -41,6 +41,5 @@ public class CrawlableProcessorRunner {
                         this.getClass().getSimpleName(), name, direction, distance);
             }
         }, "вниз", 37);
-
     }
 }

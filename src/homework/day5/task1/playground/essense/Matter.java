@@ -1,5 +1,8 @@
 package homework.day5.task1.playground.essense;
 
+import homework.day5.task1.playground.essense.material.Pourable;
+import homework.day5.task1.playground.essense.material.Powerable;
+
 public abstract class Matter {
    protected int mass;
 
