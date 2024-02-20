@@ -10,9 +10,9 @@ import java.time.format.DateTimeFormatter;
 
 public class DateTimeFormatting {
     public void dateTimeFormatter(String stringDate) throws ParseException {
-        DateTimeFormatter stringDateFormat = DateTimeFormatter.ofPattern("HH.mm dd.mm.yyyy");
+        DateTimeFormatter stringDateFormat = DateTimeFormatter.ofPattern("H.m dd.MM.yyyy");
         LocalDateTime dateTimeFromStringDate = LocalDateTime.parse(stringDate, stringDateFormat);
-        DateTimeFormatter formattedStringDate = DateTimeFormatter.ofPattern("MMMM, dd, YYYY HH:mm");
+        DateTimeFormatter formattedStringDate = DateTimeFormatter.ofPattern("MMMM, d, YYYY HH:mm");
         String formattedDate = dateTimeFromStringDate.format(formattedStringDate);
         System.out.println(formattedDate);
 
