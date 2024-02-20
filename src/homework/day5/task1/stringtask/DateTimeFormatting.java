@@ -5,15 +5,16 @@ import java.sql.Time;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class DateTimeFormatting {
     public void dateTimeFormatter(String stringDate) throws ParseException {
-        String[] array = stringDate.split("\\s+");
-        String time = array[0];
-        String date = array[1];
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH.mm");
-        Time time1 = (Time) simpleDateFormat.parse(time);
-        System.out.println(time);
+        DateTimeFormatter stringDateFormat = DateTimeFormatter.ofPattern("HH.mm dd.mm.yyyy");
+        LocalDateTime dateTimeFromStringDate = LocalDateTime.parse(stringDate, stringDateFormat);
+        DateTimeFormatter formattedStringDate = DateTimeFormatter.ofPattern("MMMM, dd, YYYY HH:mm");
+        String formattedDate = dateTimeFromStringDate.format(formattedStringDate);
+        System.out.println(formattedDate);
+
     }
 }
