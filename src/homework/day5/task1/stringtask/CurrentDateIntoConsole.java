@@ -10,7 +10,6 @@ import java.util.Locale;
 
 public class CurrentDateIntoConsole {
     public void displayCurrentDateTime() {
-        System.out.printf("Cейчас на дворе: %d %s, %d, %d часа %d минут", LocalDateTime.now().getDayOfMonth(), LocalDateTime.now().getMonth(), LocalDateTime.now().getYear(), LocalTime.now().getHour()).println();
-
+        System.out.printf("Cейчас на дворе: %d %s, %d, %d часа %d минут", LocalDateTime.now().getDayOfMonth(), LocalDateTime.now().getMonth(), LocalDateTime.now().getYear(), LocalTime.now().getHour(), LocalDateTime.now().getMinute()).println();
     }
 }
