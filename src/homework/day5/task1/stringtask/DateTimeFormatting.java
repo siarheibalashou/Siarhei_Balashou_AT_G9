@@ -14,7 +14,6 @@ public class DateTimeFormatting {
         LocalDateTime dateTimeFromStringDate = LocalDateTime.parse(stringDate, stringDateFormat);
         DateTimeFormatter formattedStringDate = DateTimeFormatter.ofPattern("MMMM, d, YYYY HH:mm");
         String formattedDate = dateTimeFromStringDate.format(formattedStringDate);
-        System.out.println(formattedDate);
-
+        System.out.print(formattedDate);
     }
 }

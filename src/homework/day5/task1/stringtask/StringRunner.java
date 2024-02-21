@@ -7,8 +7,8 @@ public class StringRunner {
 //        AllLettersIntoColumn allLettersIntoColumn = new AllLettersIntoColumn();
 //        allLettersIntoColumn.lettersIntoColumn("fsdafg1!1dfffasd!sdddd&^№efgg");
 //        DuplicationItemsArray duplicationItemsArray = new DuplicationItemsArray();
-//        CurrentDateIntoConsole currentDateIntoConsole = new CurrentDateIntoConsole();
-//        currentDateIntoConsole.displayCurrentDateTime();
+        CurrentDateIntoConsole currentDateIntoConsole = new CurrentDateIntoConsole();
+        currentDateIntoConsole.displayCurrentDateTime();
 //        duplicationItemsArray.duplicationItemsFinder("fdgdfg 3r3 vbrgrgrg");
         DateTimeFormatting dateTimeFormatting = new DateTimeFormatting();
         dateTimeFormatting.dateTimeFormatter("22.00 07.09.2020");
