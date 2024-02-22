@@ -1,4 +1,4 @@
-package project.bubbletask.boxing;
+package project.bubbletask.watertype;
 
 public class SparklingWater extends Water {
     private boolean isOpened;

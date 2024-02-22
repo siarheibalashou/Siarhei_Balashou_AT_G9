@@ -1,4 +1,4 @@
-package project.bubbletask.boxing;
+package project.bubbletask.watertype;
 
 public class Bubble {
     private double bubbleVolume = 0.3;

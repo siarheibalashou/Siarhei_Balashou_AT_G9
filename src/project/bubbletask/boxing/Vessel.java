@@ -1,6 +1,6 @@
 package project.bubbletask.boxing;
 
-import project.bubbletask.boxing.interfaces.Transformable;
+import project.bubbletask.interfaces.Transformable;
 import project.bubbletask.materials.Material;
 
 public abstract class Vessel implements Transformable {
@@ -16,6 +16,8 @@ public abstract class Vessel implements Transformable {
         this.material = material;
         weight = (int) (volume * material.getDensity() / diameter);
     }
+
+
 
     public double getVolume() {
         return volume;

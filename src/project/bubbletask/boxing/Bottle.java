@@ -1,7 +1,10 @@
 package project.bubbletask.boxing;
 
-import project.bubbletask.boxing.interfaces.Containable;
-import project.bubbletask.boxing.interfaces.Transformable;
+import project.bubbletask.interfaces.Containable;
+import project.bubbletask.interfaces.Transformable;
+import project.bubbletask.watertype.Bubble;
+import project.bubbletask.watertype.SparklingWater;
+import project.bubbletask.watertype.Water;
 
 public class Bottle extends Vessel implements Containable {
     private double volume;
@@ -12,12 +15,6 @@ public class Bottle extends Vessel implements Containable {
         super();
         temperature = this.water.getTemperature();
         setVolume(volume);
-    }
-
-    public Bottle(double volume) {
-        this.volume = volume;
-        setVolume(volume);
-
     }
 
 
