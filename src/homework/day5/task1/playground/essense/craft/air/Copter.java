@@ -1,6 +1,9 @@
 package homework.day5.task1.playground.essense.craft.air;
 
-public class Copter extends Aircraft {
+import java.io.Serial;
+import java.io.Serializable;
+
+public class Copter extends Aircraft implements Serializable {
     private String name;
 
     public Copter(int mass, String name) {
