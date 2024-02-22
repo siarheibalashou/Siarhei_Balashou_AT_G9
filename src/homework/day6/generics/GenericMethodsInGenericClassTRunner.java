@@ -9,19 +9,19 @@ import homework.day5.task1.playground.essense.craft.field.Car;
 import homework.day5.task1.playground.essense.craft.field.Moped;
 import homework.day5.task1.playground.essense.craft.field.Motorbike;
 import homework.day5.task1.playground.essense.craft.field.Vehicle;
+import homework.day5.task1.playground.essense.craft.hand.Bottle;
 import homework.day5.task1.playground.essense.craft.hand.Can;
 import homework.day5.task1.playground.essense.craft.hand.Container;
 import homework.day5.task1.playground.essense.craft.hand.Mug;
 import homework.day5.task1.playground.essense.material.Diesel;
 import homework.day5.task1.playground.essense.material.Petrol;
 import homework.day5.task1.playground.essense.material.Water;
-import project.bubbletask.boxing.Bottle;
 
 
 public class GenericMethodsInGenericClassTRunner {
     public static void main(String[] args) {
         GenericMethodsInGenericClassT genericMethodsInGenericClassT = new GenericMethodsInGenericClassT();
-        Bottle type = new Bottle(12);
+        Bottle type = new Bottle(12,"asss");
         genericMethodsInGenericClassT.genericMethodOneGenArg(type);
         genericMethodsInGenericClassT.genericMethodTwoGenArgs(type, new Car(12, "asd"));
         genericMethodsInGenericClassT.genericMethodHalfGenArgs(type, "asdasd!@#%^");

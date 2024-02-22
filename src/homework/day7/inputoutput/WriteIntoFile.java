@@ -4,8 +4,8 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-
-public class writeIntoFile {
+//записывает в файл фразу "Hello, I just got 'X' from you!", где Х - фраза, вводимая в консоль с клавиатуры.
+public class WriteIntoFile {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String scannedString = String.valueOf(scanner.next());

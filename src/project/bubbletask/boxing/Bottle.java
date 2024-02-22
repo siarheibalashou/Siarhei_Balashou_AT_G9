@@ -1,25 +1,21 @@
 package project.bubbletask.boxing;
 
-import project.bubbletask.boxing.interfaces.Containable;
-import project.bubbletask.boxing.interfaces.Transformable;
+import project.bubbletask.interfaces.Containable;
+import project.bubbletask.interfaces.Transformable;
+import project.bubbletask.materials.Material;
+import project.bubbletask.watertype.Bubble;
+import project.bubbletask.watertype.SparklingWater;
+import project.bubbletask.watertype.Water;
 
 public class Bottle extends Vessel implements Containable {
     private double volume;
     private Water water;
     SparklingWater waterSparkling = new SparklingWater("bad", "bad", 1, "fe");
 
-    public Bottle(double volume, int temperature) {
-        super();
-        temperature = this.water.getTemperature();
-        setVolume(volume);
-    }
-
-    public Bottle(double volume) {
+    public Bottle(double volume, double diameter, Material material) {
+        super(volume, diameter, material);
         this.volume = volume;
-        setVolume(volume);
-
     }
-
 
     public void setVolume(double volume) {
         this.volume = volume;
@@ -29,12 +25,8 @@ public class Bottle extends Vessel implements Containable {
         return volume;
     }
 
-    public void open() {
-        waterSparkling.pump(new Bubble[(int) (volume * 10000)]);
-        waterSparkling.degas();
-    }
-
     public void warm(int temperature) {
+
         water.setTemperature(temperature);
     }
 
@@ -44,6 +36,13 @@ public class Bottle extends Vessel implements Containable {
 
     public void setWater(Water water) {
         this.water = water;
+    }
+
+    public void open() {
+        if (waterSparkling instanceof SparklingWater) {
+            waterSparkling.pump(new Bubble[(int) (volume * 10000)]);
+            waterSparkling.degas();
+        }
     }
 
     private void setBubbles() {
