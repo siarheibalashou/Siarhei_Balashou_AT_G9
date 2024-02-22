@@ -1,21 +1,24 @@
 package project.bubbletask.boxing;
 
-public class Bottle {
+import project.bubbletask.boxing.interfaces.Containable;
+import project.bubbletask.boxing.interfaces.Transformable;
+
+public class Bottle extends Vessel implements Containable {
     private double volume;
     private Water water;
     SparklingWater waterSparkling = new SparklingWater("bad", "bad", 1, "fe");
 
-    public Bottle(double volume, int temperature ) {
-        temperature=this.water.getTemperature();
+    public Bottle(double volume, int temperature) {
+        super();
+        temperature = this.water.getTemperature();
         setVolume(volume);
     }
 
     public Bottle(double volume) {
-        this.volume=volume;
+        this.volume = volume;
         setVolume(volume);
 
     }
-
 
 
     public void setVolume(double volume) {
@@ -43,8 +46,25 @@ public class Bottle {
         this.water = water;
     }
 
-    public void setBubbles() {
+    private void setBubbles() {
 
+    }
+
+    @Override
+    public void addStuff(Transformable stuff) {
+        if (stuff instanceof SparklingWater) {
+            setBubbles();
+        }
+    }
+
+    @Override
+    public Transformable removeStuff() {
+        return null;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
     }
 }
 
