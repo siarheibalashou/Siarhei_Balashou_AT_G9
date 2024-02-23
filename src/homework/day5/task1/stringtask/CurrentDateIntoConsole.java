@@ -1,12 +1,10 @@
 package homework.day5.task1.stringtask;
 
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.time.chrono.ChronoLocalDate;
-import java.util.Date;
-import java.util.Locale;
+
+//написать метод, который выводит в консоль текущую дату и время в формате:
+//Сейчас на дворе: 19 сентября, 2020, 3 часа 13 минут
 
 public class CurrentDateIntoConsole {
     public void displayCurrentDateTime() {

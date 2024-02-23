@@ -12,5 +12,7 @@ public class StringRunner {
 //        duplicationItemsArray.duplicationItemsFinder("fdgdfg 3r3 vbrgrgrg");
         DateTimeFormatting dateTimeFormatting = new DateTimeFormatting();
         dateTimeFormatting.dateTimeFormatter("22.00 07.09.2020");
+        DigitsFromString digitsFromString = new DigitsFromString();
+        digitsFromString.digitsToArray("as123123 34 343434asdasd 33 3 0");
     }
 }

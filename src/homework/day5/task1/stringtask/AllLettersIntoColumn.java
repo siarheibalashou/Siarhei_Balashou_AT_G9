@@ -1,9 +1,9 @@
 package homework.day5.task1.stringtask;
 
-import org.w3c.dom.Text;
-
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+//сделать метод, который позволяет отпечатать в консоль все буквы в стобик из строки текста,
+// которую принимает на вход в виде аргумента.
 
 public class AllLettersIntoColumn {
 
