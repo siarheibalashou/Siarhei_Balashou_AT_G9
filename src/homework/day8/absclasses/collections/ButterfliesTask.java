@@ -27,8 +27,9 @@ public class ButterfliesTask {
         }
         System.out.println("Итерация по индексу и вывод через пробел:");
         for (int elementIndex = 0; elementIndex < butterflies.size(); elementIndex++) {
-            System.out.printf(" %s", butterflies.get(elementIndex)).println();
+            System.out.printf(" %s", butterflies.get(elementIndex));
         }
+        System.out.println();
         int counter = 0;
         for (String iteratedButterfly : butterflies) {
             if (iteratedButterfly.contains("o")) {
