@@ -6,6 +6,7 @@ package homework.day5.task1.stringtask;
 // где n - это количество гласных буков в получаемой строке
 
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class DateOlderThanCurrent {
@@ -15,7 +16,8 @@ public class DateOlderThanCurrent {
         int vowelsInString = strArrayWithSpaces.length;
         Calendar timestamp = Calendar.getInstance();
         timestamp.add(Calendar.DAY_OF_MONTH, +vowelsInString);
-        String date = String.valueOf(timestamp.getTime());
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd MMMM");
+        String date= simpleDateFormat.format(timestamp.getTime());
         System.out.printf("Сгенерированная гласная дата: %s", date).println();
     }
 }

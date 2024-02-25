@@ -52,6 +52,7 @@ public class Bottle extends Vessel implements Containable {
     @Override
     public void addStuff(Transformable stuff) {
         if (stuff instanceof SparklingWater) {
+            System.out.printf("Adding %s into Bottle", stuff.getClass().getSimpleName()).println();
             setBubbles();
         }
     }
