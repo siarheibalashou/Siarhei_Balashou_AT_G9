@@ -1,4 +1,4 @@
-package homework.day8.absclasses.collections;
+package homework.day8.collections;
 
 import java.util.Arrays;
 import java.util.List;
@@ -28,6 +28,7 @@ public class DoublesAsList {
 
         decimalSum(doubles);
         integerNumberPart(doubles);
+        System.out.println(calculateSumOfDecimalParts(doubles));
     }
 
     private static void decimalSum(List<Double> listWithDecimals) {
@@ -48,5 +49,13 @@ public class DoublesAsList {
             System.out.print(Integer.parseInt(intPartOfDouble) + " ");
         }
         System.out.println();
+    }
+
+    private static double calculateSumOfDecimalParts(List<Double> inputDoubles) {
+        double result = 0;
+        for (double doubleElement : inputDoubles) {
+            result += doubleElement - (int) doubleElement;
+        }
+        return result;
     }
 }

@@ -1,4 +1,4 @@
-package homework.day8.absclasses.collections;
+package homework.day8.collections;
 
 import java.util.ArrayList;
 import java.util.List;

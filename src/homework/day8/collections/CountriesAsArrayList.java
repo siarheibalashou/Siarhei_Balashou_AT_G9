@@ -1,4 +1,4 @@
-package homework.day8.absclasses.collections;
+package homework.day8.collections;
 
 //5.
 //Создать пустой список стрингов countries (через new ArrayList)
