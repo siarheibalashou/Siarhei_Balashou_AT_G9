@@ -17,16 +17,20 @@ public class CountriesAsArrayList {
         countries.add("Португалия");
         countries.add("Англия");
         countries.add("Замбия");
+
         for (String country : countries) {
             System.out.printf("%s, ", country);
         }
+
         System.out.println();
         int counter = 0;
+
         for (String country : countries) {
             if (country.length() < 7) {
                 counter++;
             }
         }
+
         System.out.println("Кол-во стран с меньше 7 букв в названии: " + counter);
 
         for (int index = 0; index < countries.size(); index++) {

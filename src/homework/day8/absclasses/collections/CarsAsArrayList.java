@@ -25,10 +25,12 @@ public class CarsAsArrayList {
         cars.add("Ауди");
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter("file_with_cars", true));
+
             for (String car : cars) {
                 String formattedCar = String.format("\"%s\"\n", car);
                 writer.write(formattedCar);
             }
+
             writer.close();
         } catch (IOException e) {
             System.out.println("IOException - displayed when error on file writing happened");
@@ -39,11 +41,13 @@ public class CarsAsArrayList {
 //                cars.remove(elemIndex);
 //            }
 //        }
+
         Iterator<String> iterator = cars.iterator();
         while (iterator.hasNext()) {
             if (iterator.next().length() > 4)
                 iterator.remove();
         }
+
         for (String car : cars) {
             System.out.print(car + " ");
         }

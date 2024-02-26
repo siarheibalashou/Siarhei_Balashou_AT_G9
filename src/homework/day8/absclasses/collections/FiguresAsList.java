@@ -19,25 +19,32 @@ public class FiguresAsList {
     public static void main(String[] args) {
         List<String> figures = Arrays.asList("Овал", "Прямоугольник", "Круг", "Квадрат", "Эллипс");
         try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter("file_with_figures", true));
+            BufferedWriter writer = new BufferedWriter(new FileWriter("file_with_figures"));
+
             for (String figure : figures) {
                 writer.write(figure + "-");
             }
+
             writer.close();
         } catch (IOException e) {
             System.out.println("IOException - write operation can be failed ");
         }
         int counter = 0;
+
         for (String figure : figures) {
             if (!figure.contains("и"))
                 counter++;
         }
+
         System.out.println("Кол-во слов без \"и\": " + counter);
+
         for (int elemIndex = 0; elemIndex < figures.size(); elemIndex++) {
             System.out.printf(" %s", figures.get(elemIndex));
         }
+
         System.out.println();
-        figures.set(3, "Треугольник");
+        figures.set(2, "Треугольник");
+
         for (String figure : figures) {
             System.out.print(" " + figure);
         }

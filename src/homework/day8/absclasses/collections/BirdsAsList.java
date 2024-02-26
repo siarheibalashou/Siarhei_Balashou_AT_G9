@@ -15,22 +15,28 @@ import java.util.regex.Pattern;
 public class BirdsAsList {
     public static void main(String[] args) {
         List<String> birds = Arrays.asList("Чайка", "Дрозд", "Бусел", "Голубь", "Воробей", "Цапля");
+
         for (String bird : birds) {
             System.out.printf("-%s--", bird).println();
         }
+
         int counter = 0;
 
         for (String bird : birds) {
-            if (bird.matches("[ауоиэы]{2,}")) {
+            if (bird.matches(".*[ауоиэыяюеёАУОИЭЫЯЮЕЁ].*[ауоиэыяюеёАУОИЭЫЯЮЕЁ].*")) {
                 counter++;
             }
         }
+
         System.out.println("кол-во птиц с больше 1 гласной в имени: " + counter);
+
         for (int index = 0; index < birds.size(); index++) {
             System.out.print(birds.get(index) + " ");
         }
+
         System.out.println();
-        birds.set(3, "Синица");
+        birds.set(2, "Синица");
+
         for (String bird : birds) {
             System.out.print(bird + " ");
         }

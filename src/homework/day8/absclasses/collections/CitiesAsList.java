@@ -17,18 +17,22 @@ public class CitiesAsList {
         cities.add("Москва");
         cities.add("Берлин");
         System.out.println("Города с новой строки: ");
+
         for (String city : cities) {
             System.out.println(city);
         }
+
         int counter = 0;
+
         for (int listElem = 0; listElem < cities.size(); listElem++) {
             counter += cities.get(listElem).length();
         }
+
         System.out.println("Кол-во буков: " + counter);
         System.out.print("Города в строку по индексу:");
+
         for (int listElem = 0; listElem < cities.size(); listElem++) {
             System.out.printf(" %s", cities.get(listElem));
         }
     }
-
 }
