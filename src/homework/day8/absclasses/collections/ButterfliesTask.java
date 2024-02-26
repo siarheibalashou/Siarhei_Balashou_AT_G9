@@ -18,23 +18,33 @@ public class ButterfliesTask {
         butterflies.add("swallowtail");
         butterflies.add("Aglais io");
         butterflies.add("Common blue");
+
         for (String i : butterflies) {
             System.out.printf("\"%s\"", i).println();
         }
+
         System.out.println("Через перенос строки: ");
+
         for (String iteratedButterfly : butterflies) {
             System.out.printf(" %s \n", iteratedButterfly);
         }
+
         System.out.println("Итерация по индексу и вывод через пробел:");
+
         for (int elementIndex = 0; elementIndex < butterflies.size(); elementIndex++) {
-            System.out.printf(" %s", butterflies.get(elementIndex)).println();
+            System.out.printf(" %s", butterflies.get(elementIndex));
         }
+
+        System.out.println();
+
         int counter = 0;
+
         for (String iteratedButterfly : butterflies) {
             if (iteratedButterfly.contains("o")) {
                 counter++;
             }
         }
+
         System.out.println("Кол-во слов с О: " + counter);
     }
 }
