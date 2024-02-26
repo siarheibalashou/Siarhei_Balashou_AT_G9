@@ -1,13 +1,15 @@
 package homework.day8.collectionsforclasses;
 
 import homework.day8.absclasses.Sand;
+import homework.day8.util.UtilClassForMap;
 
 import java.util.*;
 
 public class SandList {
-    static Random random = new Random();
+    public static Random random = new Random();
 
     public static void main(String[] args) {
+        UtilClassForMap utilClassForMap = new UtilClassForMap();
         List<Sand> sandbox = new ArrayList<>();
         sandbox.add(new Sand(2, "Речной"));
         sandbox.add(new Sand(4, "Речной"));
@@ -16,10 +18,10 @@ public class SandList {
         printSandWeight(sandbox);
         printSandName(sandbox);
         Map<Integer, Sand> sandMap = new HashMap<>();
-        fillMapWithObjects(sandbox, sandMap);
-        printMapKey(sandMap);
-        printMapValue(sandMap);
-        printKeyMapPair(sandMap);
+        utilClassForMap.fillMapWithObjects(sandbox, sandMap);
+        utilClassForMap.printMapKey(sandMap);
+        utilClassForMap.printMapValue(sandMap);
+        utilClassForMap.printKeyMapPair(sandMap);
 
     }
 
@@ -36,34 +38,4 @@ public class SandList {
         }
         System.out.println();
     }
-
-    public static Map<Integer, Sand> fillMapWithObjects(List<Sand> sandList, Map<Integer, Sand> sandMap) {
-        for (Sand sand : sandList) {
-            sandMap.put(random.nextInt(1, 10000), sand);
-        }
-        System.out.println();
-        return sandMap;
-    }
-
-    public static void printMapKey(Map<Integer, Sand> anySandMap) {
-        for (int key : anySandMap.keySet()) {
-            System.out.print(key + " ");
-        }
-        System.out.println();
-    }
-
-    public static void printMapValue(Map<Integer, Sand> anySandMap) {
-        for (Sand value : anySandMap.values()) {
-            System.out.println(value + " ");
-        }
-        System.out.println();
-    }
-
-    public static void printKeyMapPair(Map<Integer, Sand> anySandMap) {
-        for (Map.Entry<Integer, Sand> sand : anySandMap.entrySet()) {
-            System.out.println(sand);
-        }
-        System.out.println();
-    }
-
 }
