@@ -3,6 +3,14 @@ package homework.day8.absclasses.collections;
 import java.util.ArrayList;
 import java.util.List;
 
+//10.
+//Создать пустой список стрингов noodles (через new ArrayList)
+//Добавить в список 4 вида макарон (стринги Hakka, Ramen, Hibachi, Schezwan)
+//Проитерировать список через for-each и отпечатать слова в консоль через тире
+//Заменить в каждом слове буквы "а" на букву "о"
+//Проитерировать список по индексу и отпечатать слова в консоль через пробел
+
+
 public class Noodles {
     public static void main(String[] args) {
         List<String> noodles = new ArrayList<>();
@@ -29,10 +37,12 @@ public class Noodles {
         }
     }
 
-    public static ArrayList charReplacerVerTwo(ArrayList<String> anyList) {   //not working variant
+    public static ArrayList charReplacerVerTwo(ArrayList<String> anyList) {
+        //not working variant (no need to review)
         for (int i = 0; i < anyList.size(); i++) {
             anyList.get(i).replaceAll("a", "o");
         }
+
         return anyList;
     }
 }
