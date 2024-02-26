@@ -17,7 +17,7 @@ public class BirdsAsList {
         List<String> birds = Arrays.asList("Чайка", "Дрозд", "Бусел", "Голубь", "Воробей", "Цапля");
 
         for (String bird : birds) {
-            System.out.printf("-%s--", bird).println();
+            System.out.printf("--%s--", bird).println();
         }
 
         int counter = 0;
