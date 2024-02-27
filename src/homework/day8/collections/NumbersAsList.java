@@ -1,4 +1,4 @@
-package homework.day8.absclasses.collections;
+package homework.day8.collections;
 
 //8.
 //Создать список целых чисел numbers из 8 чисел (3342, 34, 79, 23426, 68, 1324, 55, 7699) через (Arrays.asList())

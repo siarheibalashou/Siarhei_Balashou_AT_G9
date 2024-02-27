@@ -1,8 +1,7 @@
-package homework.day8.absclasses.collections;
+package homework.day8.collections;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.regex.Pattern;
 
 //6.
 //Создать список строк birds из 5 птиц (Чайка, Дрозд, Бусел, Голубь, Воробей, Цапля) через (Arrays.asList())
@@ -17,7 +16,7 @@ public class BirdsAsList {
         List<String> birds = Arrays.asList("Чайка", "Дрозд", "Бусел", "Голубь", "Воробей", "Цапля");
 
         for (String bird : birds) {
-            System.out.printf("-%s--", bird).println();
+            System.out.printf("--%s--", bird).println();
         }
 
         int counter = 0;
