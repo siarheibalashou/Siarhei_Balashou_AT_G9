@@ -22,7 +22,7 @@ public class PersonList {
         people.add(new Person(63, "Маша"));
         ageOfPersons(people);
         namesOfPersons(people);
-        printPerson(people);
+        printPersonInfo(people);
     }
 
     public static void namesOfPersons(List<Person> anyPeople) {
@@ -39,7 +39,7 @@ public class PersonList {
         System.out.println();
     }
 
-    public static void printPerson(List<Person> anyPeople) {
+    public static void printPersonInfo(List<Person> anyPeople) {
         for (int index = 0; index < anyPeople.size(); index++) {
             System.out.printf((anyPeople.get(index).toString()) + "%n");
         }
