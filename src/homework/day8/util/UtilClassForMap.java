@@ -8,8 +8,8 @@ import static homework.day8.collectionsforclasses.SandList.random;
 public class UtilClassForMap<T> {
 
     public Map<Integer, T> fillMapWithObjects(List<T> anyList, Map<Integer, T> anyMap) {
-        for (T item : anyList) {
-            anyMap.put(random.nextInt(1, 10000), item);
+        for (int i = 0; i < anyList.size(); i++) {
+            anyMap.put(i, anyList.get(i));
         }
         System.out.println();
         return anyMap;
