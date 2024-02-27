@@ -21,11 +21,11 @@ public class PersonList {
         people.add(new Person(55, "Вася"));
         people.add(new Person(63, "Маша"));
         ageOfPersons(people);
-        namesOfPersons(people);
+        printNamesOfPersons(people);
         printPersonInfo(people);
     }
 
-    public static void namesOfPersons(List<Person> anyPeople) {
+    public static void printNamesOfPersons(List<Person> anyPeople) {
         for (Person person : anyPeople) {
             System.out.print(person.getName() + " ");
         }
