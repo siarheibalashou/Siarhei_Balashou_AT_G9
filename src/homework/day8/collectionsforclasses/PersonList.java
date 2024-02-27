@@ -20,7 +20,7 @@ public class PersonList {
         people.add(new Person(24, "Оля"));
         people.add(new Person(55, "Вася"));
         people.add(new Person(63, "Маша"));
-        ageOfPersons(people);
+        printAgeOfPersons(people);
         printNamesOfPersons(people);
         printPersonInfo(people);
     }
@@ -32,7 +32,7 @@ public class PersonList {
         System.out.println();
     }
 
-    public static void ageOfPersons(List<Person> anyPeople) {
+    public static void printAgeOfPersons(List<Person> anyPeople) {
         for (Person person : anyPeople) {
             System.out.print(person.getAge() + " ");
         }
