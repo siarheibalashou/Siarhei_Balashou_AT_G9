@@ -20,7 +20,7 @@ public class BubblesList {
 
         List<Bubble> bubbles = Arrays.asList(new Bubble(2, "CO2"), new Bubble(4, "O2"), new Bubble(5, "CO"));
         printVolumesOfAllBubbles(bubbles);
-        namesOfBubblesSout(bubbles);
+        printNamesOfAllBubbles(bubbles);
         System.out.println("Общий обьем пузырей: " + volumeCalculation(bubbles));
         for (int index = 0; index < bubbles.size(); index++) {
             System.out.printf((bubbles.get(index).toString()) + "%n");
@@ -35,7 +35,7 @@ public class BubblesList {
         System.out.println();
     }
 
-    public static void namesOfBubblesSout(List<Bubble> anyBubbles) {
+    public static void printNamesOfAllBubbles(List<Bubble> anyBubbles) {
         for (Bubble bubble : anyBubbles) {
             System.out.print(bubble.getName() + " ");
         }
