@@ -19,7 +19,7 @@ public class DoublesAsList {
             System.out.print(doubleFromList + " ");
         }
         System.out.println();
-        int multiplyCounter = 1;
+        double multiplyCounter = 1;
 
         for (double doubleFromList : doubles) {
             multiplyCounter *= doubleFromList;
