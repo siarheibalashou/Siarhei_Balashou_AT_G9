@@ -26,6 +26,8 @@ public class Noodles {
         }
 
         charReplacer(noodles, "a", "o");
+        System.out.println(charReplacerVerTwo(noodles));
+
     }
 
     public static void charReplacer(List<String> anyList, String regex, String replace) {
@@ -37,10 +39,10 @@ public class Noodles {
         }
     }
 
-    public static ArrayList charReplacerVerTwo(ArrayList<String> anyList) {
+    public static List<String> charReplacerVerTwo(List<String> anyList) {
         //not working variant (no need to review)
         for (int i = 0; i < anyList.size(); i++) {
-            anyList.get(i).replaceAll("a", "o");
+            anyList.set(i,anyList.get(i).replaceAll("a", "o"));
         }
 
         return anyList;
