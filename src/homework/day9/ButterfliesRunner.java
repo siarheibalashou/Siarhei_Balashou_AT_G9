@@ -18,10 +18,6 @@ public class ButterfliesRunner {
         butterflies.add("Aglais io");
         butterflies.add("Common blue");
 
-        List<String> bf = butterflies.stream().map(string -> string.replaceFirst("", "\"")).map(string -> string.concat("\"")).filter(string -> string.contains("a") && string.contains("o")).toList();
-
-        for (String bfly : bf) {
-            System.out.println(bfly);
-        }
+        butterflies.stream().map(string -> string.replaceFirst("", "\"")).map(string -> string.concat("\"")).filter(string -> string.contains("a") && string.contains("o")).forEach(System.out::println);
     }
 }
