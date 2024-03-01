@@ -14,7 +14,10 @@ public class FurnitureList {
         List<Chair> furniture = Arrays.asList(new Chair(1, 2), new Chair(4, 2), new Chair(2, 4));
         multiplyCalculation(furniture);
         Map<Integer, Chair> furnitureMap = new HashMap<>();
-        utilClassForMap.fillMapWithObjects(furniture, furnitureMap);
+
+        for (int i = 0; i < furniture.size(); i++) {
+            furnitureMap.put(i + 1, furniture.get(i));
+        }
         utilClassForMap.printMapKey(furnitureMap);
         utilClassForMap.printMapValue(furnitureMap);
         utilClassForMap.printKeyMapPair(furnitureMap);

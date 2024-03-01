@@ -18,14 +18,12 @@ import java.util.List;
 public class FiguresAsList {
     public static void main(String[] args) {
         List<String> figures = Arrays.asList("Овал", "Прямоугольник", "Круг", "Квадрат", "Эллипс");
-        try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter("file_with_figures"));
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("file_with_figures"))){
 
             for (String figure : figures) {
                 writer.write(figure + "-");
             }
 
-            writer.close();
         } catch (IOException e) {
             System.out.println("IOException - write operation can be failed ");
         }

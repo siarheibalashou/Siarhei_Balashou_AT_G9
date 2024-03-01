@@ -18,7 +18,11 @@ public class SandList {
         printSandWeight(sandbox);
         printSandName(sandbox);
         Map<Integer, Sand> sandMap = new HashMap<>();
-        utilClassForMap.fillMapWithObjects(sandbox, sandMap);
+
+        for (int i = 0; i < sandbox.size(); i++) {
+            sandMap.put(i+1, sandbox.get(i));
+        }
+
         utilClassForMap.printMapKey(sandMap);
         utilClassForMap.printMapValue(sandMap);
         utilClassForMap.printKeyMapPair(sandMap);
