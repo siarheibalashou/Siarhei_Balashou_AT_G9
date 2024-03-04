@@ -47,5 +47,4 @@ public class Bubble {
                 ", name='" + name + '\'' +
                 '}';
     }
-
 }
