@@ -22,6 +22,5 @@ public class BirdsRunner {
                 .map(string -> string.concat(""))
                 .map(string -> string.replaceAll("ь", "").split("б"))
                 .forEach(strings -> System.out.printf("--%s--", strings));
-
     }
 }
