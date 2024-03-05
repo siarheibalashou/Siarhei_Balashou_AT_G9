@@ -16,10 +16,12 @@ import java.util.stream.Collectors;
 public class BirdsRunner {
     public static void main(String[] args) {
         List<String> birds = Arrays.asList("Чайка", "Дрозд", "Бусел", "Голубь", "Воробей", "Цапля");
-        birds.stream().map(string -> string.replace("о", "а"))
+        birds.stream()
+                .map(string -> string.replace("о", "а"))
                 .map(String::toLowerCase)
                 .map(string -> string.concat(""))
-                .map(string -> string.replaceAll("ь","").split("б")).forEach(strings -> System.out.printf("--%s--",strings));
+                .map(string -> string.replaceAll("ь", "").split("б"))
+                .forEach(strings -> System.out.printf("--%s--", strings));
 
     }
 }
