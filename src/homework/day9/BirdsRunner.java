@@ -19,7 +19,8 @@ public class BirdsRunner {
         birds.stream().map(string -> string.replace("о", "а"))
                 .map(String::toLowerCase)
                 .map(string -> string.concat(""))
-                .map(string -> string.replaceAll("ь","").split("б")).forEach(strings -> System.out.printf("--%s--",strings));
-
+                .map(string -> string.replaceAll("ь", ""))
+                .map(string -> string.split("б"))
+                .forEach(strings -> System.out.printf("--%s--", strings));
     }
 }
