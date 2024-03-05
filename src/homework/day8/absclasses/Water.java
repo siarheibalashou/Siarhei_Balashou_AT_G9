@@ -19,7 +19,7 @@ public class Water {
         this.color = color;
     }
 
-    private String getSmell() {
+    public String getSmell() {
         return smell;
     }
 

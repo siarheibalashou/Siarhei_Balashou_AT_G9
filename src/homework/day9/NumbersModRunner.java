@@ -1,5 +1,6 @@
 package homework.day9;
 
+import java.util.Comparator;
 import java.util.stream.Stream;
 
 //9.
@@ -24,6 +25,6 @@ public class NumbersModRunner {
                     case '8' -> "восемь";
                     case '9' -> "девять";
                     default -> "null";
-                }).forEach(System.out::println);
+                }).distinct().sorted(Comparator.reverseOrder()).forEach(System.out::println);
     }
 }
