@@ -1,6 +1,5 @@
 package homework.day8.collectionsforclasses;
 
-import homework.day8.absclasses.Bubble;
 import homework.day8.absclasses.Person;
 
 import java.util.ArrayList;
