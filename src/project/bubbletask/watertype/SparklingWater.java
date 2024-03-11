@@ -21,14 +21,13 @@ public class SparklingWater extends Water {
     }
 
     public void pump(Bubble[] bubbles) {
-        this.bubbles = bubbles;
         for (int i = 0; i < bubbles.length; i++) {
             bubbles[i] = new Bubble("c3");
         }
     }
 
     public void setOpened() {
-        if (isOpened() == false) {
+        if (!isOpened()) {
             isOpened = true;
             degas();
         } else System.out.println("Бутылка уже открыта");
