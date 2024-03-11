@@ -26,7 +26,6 @@ public class Bottle extends Vessel implements Containable {
     }
 
     public void warm(int temperature) {
-
         water.setTemperature(temperature);
     }
 

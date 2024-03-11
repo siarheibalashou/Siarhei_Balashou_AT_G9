@@ -1,7 +1,7 @@
 package project.bubbletask.watertype;
 
 public class Bubble {
-    private double bubbleVolume = 0.3;
+    private final double  BUBBLEVOLUME = 0.3;
     private String gas;
 
     public Bubble(String gas) {
@@ -9,7 +9,7 @@ public class Bubble {
     }
 
     public double getVolume() {
-        return bubbleVolume;
+        return BUBBLEVOLUME;
     }
 
     public String getGas() {
